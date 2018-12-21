@@ -1,0 +1,9 @@
+#!/bin/sh
+address=$(ifconfig en0 | awk '/broadcast/{ print $6 }')
+echo "Broadcast address : $address"
+read -p "show all ip addresses of the same subnet (y/n)? " -n 1
+case $REPLY in
+	[yY])
+	ping -c 2 $address 1> /dev/null
+	arp -a | awk '{print $2}' | sed 's/^.\(.*\).$/\1/' | grep "10"
+esac
