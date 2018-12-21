@@ -1,0 +1,2 @@
+#!/bin/sh
+netstat -rn | awk '/default/{ print $2 }' | egrep '([0-9]{1,3}.){3}[0-9]{1,3}'
