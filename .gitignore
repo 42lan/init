@@ -1,0 +1,6 @@
+# Swp files
+*.swp
+*.swo
+
+# Meta data infos
+*.DS_Store
