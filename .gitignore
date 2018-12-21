@@ -4,3 +4,6 @@
 
 # Meta data infos
 *.DS_Store
+
+# .txt files
+.references.txt
