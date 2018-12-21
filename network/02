@@ -1,7 +1,7 @@
 #!/bin/sh
-address=$(ifconfig en0 | awk '/broadcast/{ print $6 }')
+address=$(ifconfig en0 | awk '/inet /{ print $6 }')
 echo "Broadcast address : $address"
-read -p "show all ip addresses of the same subnet (y/n)? " -n 1
+read -p "Show all ip addresses of the same subnet (y/n)? " -n 1
 case $REPLY in
 	[yY])
 	ping -c 2 $address 1> /dev/null
