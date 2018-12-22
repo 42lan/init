@@ -1,0 +1,2 @@
+`authorized_keys` is file that contains RSA key of systems that authorized to
+connect via SSH. It is located in `/home/user/.ssh/` folder.
