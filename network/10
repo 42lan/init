@@ -1,2 +1,2 @@
 #!/bin/sh
-traceroute -q1 slash16.org | awk '{ print $1" "$2 }'
+traceroute -q1 slash16.org
