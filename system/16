@@ -1,0 +1,5 @@
+Service which makes possible to run specific tasks following a regular schedule
+is `cron`.
+`crontab` - install/deinstall/list tables user to drive cron daemon.
+	#crontab -e		Edit currect crontab. Modified crontab install automaticly.
+	#crontab -l		List current crontab.
