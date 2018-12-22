@@ -1,0 +1,5 @@
+1.	To connect as new user via graphic session I'd run Virtual Box, start the
+	virtual machine, enter new user's login and password.
+2.	To connect as new user via ssh session I'd run follow command :
+	ssh username@127.0.0.1 -p 2222
+	Then I'll prompted a password.
