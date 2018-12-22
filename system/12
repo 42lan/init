@@ -1,2 +1,2 @@
 #!/bin/sh
-du -ld1 /var
+du -ld1 /var/
