@@ -1,2 +1,2 @@
 #!/bin/sh
-service ssh status
+sudo service ssh status
