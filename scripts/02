@@ -1,4 +1,3 @@
 #!/bin/sh
 read -p "Which user do you want to delete? " username
-pkill -u $username
-deluser $username
+pkill -u $username && deluser --remove-home $username
