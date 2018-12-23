@@ -6,6 +6,7 @@ To find the provider of the given website there is a lot of solution :
 	REGISTRANT - is the legal owner of the domain who registered it.
 	REGISTRAR - a company that help to look up and register a domain name.
 	whois slash16.org | awk '/(Registrar|registrar):/ { print; exit }'
+	whois slash16.org | awk '/Name Server:/ { print; exit }'
 
 2.	Use a dedicate service to look up details like : whoishostingthis.com or
 	hostingcompass.com
