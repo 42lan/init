@@ -1,0 +1,3 @@
+#!/bin/sh
+read -p "Put message that need to be ecrypted/decrypted : "
+echo $REPLY | tr 'A-Za-z' 'N-ZA-Mn-za-m'
