@@ -4,7 +4,7 @@ vagrant ssh
 ___	PART 2 ____________________________________________________________________
 01.	lo0 gif0 stf0 en0 en1 en2 en3 p2p0 awdl0 bridge0 vboxnet0 utun0 en5
 02.	10.1x.x.x - 10.1x.255.255
-03. xx:xx:xx:xx:xx:xx
+03.	xx:xx:xx:xx:xx:xx
 04.	10.1x.254.254
 05.	10.51.1.42
 06.	/etc/resolv.conf
@@ -34,9 +34,9 @@ ___	PART 3 ____________________________________________________________________
 	sudo fdisk -l
 11.	sudo df -h
 12.	sudo du -lhd1 /var
-13. top
-14. sudo tail -f /var/log/syslog &
-15. kill %%
+13.	top
+14.	sudo tail -f /var/log/syslog &
+15.	kill %%
 	sudo kill 9 $(ps aux | grep -m 1 "sudo tail -f /var/log/syslog" | cut -d " " -f 8)
 16.	cron
 17.	ssh username@127.0.0.1 -p 2222
