@@ -1,0 +1,56 @@
+vagrant plugin install vagrant-vbguest && vagrant up && vagrant vbguest
+vagrant ssh
+
+___	PART 2 ____________________________________________________________________
+01.	lo0 gif0 stf0 en0 en1 en2 en3 p2p0 awdl0 bridge0 vboxnet0 utun0 en5
+02.	10.1x.x.x - 10.1x.255.255
+03. xx:xx:xx:xx:xx:xx
+04.	10.1x.254.254
+05.	10.51.1.42
+06.	/etc/resolv.conf
+07.	nslookup slash16.org 8.8.8.8
+	dig @8.8.8.8 slash16.org
+	host slash16.org
+08.	Amazon.com
+09.	163.172.250.11, 163.172.250.12, 163.172.250.13
+10.	traceroute -q1 slash16.org
+11.	Name: nat-1 IP: 10.60.1.11
+12.	10.1x.x.x
+13.	eXrXpX.42.fr.
+14.	/etc/hosts
+15.	46.19.122.85 intra.42.fr
+
+___	PART 3 ____________________________________________________________________
+01.	/etc/debian_version
+02.	sudo hostnamectl set-hostname born2code
+03.	/etc/hostname
+04.	uptime
+05.	sudo service ssh status
+06.	sudo service ssh restart
+07.	cat /var/run/sshd.pid
+08.	~/.ssh/authorized_keys
+09.	w
+10.	sudo lsblk -p
+	sudo fdisk -l
+11.	sudo df -h
+12.	sudo du -lhd1 /var
+13. top
+14. sudo tail -f /var/log/syslog &
+15. kill %%
+	sudo kill 9 $(ps aux | grep -m 1 "sudo tail -f /var/log/syslog" | cut -d " " -f 8)
+16.	cron
+17.	ssh username@127.0.0.1 -p 2222
+18.	sudo systemctl stop sshd
+19.	systemctl list-unit-files | awk '/enabled/'
+20.	awk -F: '{ print $1 }' /etc/passwd
+21.	awk -F: '{ if ( $3 >= 1000 && $3 < 65534 ) print $1 }' /etc/passwd
+	cat /etc/passwd | grep "/home" | cut -d ":" -f 1
+22.	sudo adduser
+23.	Virtualbox -> VM Guest -> username:password
+	username@localhost -p 2222
+24.	apt list --installed
+
+___	PART 4 ____________________________________________________________________
+01.	awk -F: '{ print $1, $3, $6}' /etc/passwd
+02.	pkill -u username && deluser --remove-home username
+03.	utility and compplexity 0-5
